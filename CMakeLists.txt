@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.23)
 
+# keep it before project
+set (CMAKE_INSTALL_PREFIX $ENV{FUZZER}/SVF/Release-build)
+
 project(SVF
   VERSION 2.9
   DESCRIPTION "SVF is a static value-flow analysis tool for LLVM-based languages"
